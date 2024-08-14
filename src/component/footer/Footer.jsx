@@ -1,6 +1,5 @@
-import { styles } from "./footer.style.js";
 import { Link } from "react-router-dom";
-import { Fragment } from "react";
+import { FooterWrap } from "./footer.style.js";
 import {
   TechQuestLogo,
   mail,
@@ -11,80 +10,77 @@ import {
   linkedin,
   github,
 } from "../../assets/index.js";
-
 function Footer() {
   return (
-    <Fragment style={styles.footer}>
-      <div style={styles.Wrapper}>
-        <div style={styles.FooterContainer}>
-          <div style={styles.leftSection}>
-            <div style={styles.LogoContainer}>
-              <img src={TechQuestLogo} />
-            </div>
-
-            <div style={styles.connections}>
-              <Link to="/mail:info@techquest.com" style={styles.connection}>
-                <img src={mail} style={styles.connection.img} />
-                <p style={styles.connection.p}>info@techquest.com</p>
-              </Link>
-              <Link to="/phone:+201015501129" style={styles.connection}>
-                <img src={callPhone} style={styles.connection.img} />
-                <p style={styles.connection.p}>+201015501129</p>
-              </Link>
-              <Link to="/" style={styles.connection}>
-                <img src={location} style={styles.connection.img} />
-                <p style={styles.connection.p}>Anywhere at the World</p>
-              </Link>
-            </div>
+    <FooterWrap>
+      <div className="container mx-auto FooterContainer">
+        <div className="col">
+          <div className="LogoContainer">
+            <img src={TechQuestLogo} alt="TechQuest Logo" />
           </div>
-          <div style={styles.rightSection}>
-            <ul style={styles.Col}>
-              <h6 style={styles.headCol}>Home</h6>
-              <li style={styles.item}>Benfites</li>
-              <li style={styles.item}>Our Courses</li>
-              <li style={styles.item}>Our Testimonials</li>
-              <li style={styles.item}>Our FAQ</li>
-            </ul>
+          <div className="connections">
+            <Link to="mailto:info@techquest.com" className="connection">
+              <img src={mail} alt="Mail" />
+              <p>info@techquest.com</p>
+            </Link>
+            <Link to="tel:+201015501129" className="connection">
+              <img src={callPhone} alt="Phone" />
+              <p>+201015501129</p>
+            </Link>
+            <Link to="/" className="connection">
+              <img src={location} alt="Location" />
+              <p>Anywhere at the World</p>
+            </Link>
+          </div>
+        </div>
 
-            <ul style={styles.Col}>
-              <h6 style={styles.headCol}>About Us</h6>
-              <li style={styles.item}>Company</li>
-              <li style={styles.item}>Achievements</li>
-              <li style={styles.item}>Our Goals</li>
-            </ul>
+        <ul className="Col flex flex-col gap-2">
+          <h6 className="headCol mb-2 text-[20px] font-bold">Home</h6>
+          <li className="item">Benefits</li>
+          <li className="item">Our Courses</li>
+          <li className="item">Our Testimonials</li>
+          <li className="item">Our FAQ</li>
+        </ul>
 
-            <div style={styles.ColSocial}>
-              <h6 style={styles.headCol}>Social Profiles</h6>
-              <div style={styles.iconsSocial}>
-                <div style={styles.platform}>
-                  <Link to="/facebook" style={styles.oneConnection}>
-                    <img src={facebook} />
-                  </Link>
-                </div>
-                <div style={styles.platform}>
-                  <Link to="/twitter" style={styles.oneConnection}>
-                    <img src={twitter} />
-                  </Link>
-                </div>
-                <div style={styles.platform}>
-                  <Link to="/linkedin" style={styles.oneConnection}>
-                    <img src={linkedin} />
-                  </Link>
-                </div>
-                <div style={styles.platform}>
-                  <Link to="/github" style={styles.oneConnection}>
-                    <img src={github} />
-                  </Link>
-                </div>
-              </div>
+        <ul className="Col flex flex-col gap-2">
+          <h6 className="headCol mb-2 text-[20px] font-bold">About Us</h6>
+          <li className="item">Company</li>
+          <li className="item">Achievements</li>
+          <li className="item">Our Goals</li>
+        </ul>
+
+        <div className="ColSocial flex flex-col gap-2">
+          <h6 className="headCol mb-2 text-[20px] font-bold">
+            Social Profiles
+          </h6>
+          <div className="iconsSocial flex items-center gap-2">
+            <div className="platform w-10 h-10 rounded bg-gray-300 flex justify-center items-center">
+              <Link to="/facebook">
+                <img src={facebook} alt="Facebook" />
+              </Link>
+            </div>
+            <div className="platform w-10 h-10 rounded bg-gray-300 flex justify-center items-center">
+              <Link to="/twitter">
+                <img src={twitter} alt="Twitter" />
+              </Link>
+            </div>
+            <div className="platform w-10 h-10 rounded bg-gray-300 flex justify-center items-center">
+              <Link to="/linkedin">
+                <img src={linkedin} alt="LinkedIn" />
+              </Link>
+            </div>
+            <div className="platform w-10 h-10 rounded bg-gray-300 flex justify-center items-center">
+              <Link to="/github">
+                <img src={github} alt="GitHub" />
+              </Link>
             </div>
           </div>
         </div>
-        <p style={styles.copyRight}>
-          &copy; 2024 TechQuest. All rights reserved to indecoding TEAM.
-        </p>
       </div>
-    </Fragment>
+      <p className="copyRight text-center pt-5 pb-2">
+        &copy; 2024 TechQuest. All rights reserved to indecoding TEAM.
+      </p>
+    </FooterWrap>
   );
 }
 

@@ -1,56 +1,52 @@
-export const styles = {
-  navbar: {
-    top: 10,
-    position: "fixed",
-    width: "100%",
-    hight:'54px',
-  },
-  p: {
-    textAlign: 'center',
-    backgroundColor: 'blue',
-    color: '#fff',
-    padding: '8px 0',
-    width: '96%',
-    borderRadius: 8,
-    margin:'4px auto'
-    
-  },
-  left: {
-    display: "flex",
-    justifyContent: "flex-start",
-    flexWrap: "wrap",
-    alignItems: "center",
-  },
-  routing: {
-    display: "flex",
-    justifyContent: "space-around",
-    flexDirection: "row",
-    flexWrap: "wrap",
-    alignItems: "center",
-    listStyle: "none",
-    marginLeft: 50,
-    padding: 0,
-  },
-  wrapper: {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "space-around",
-    width: "100%",
-  },
-  itemLink: {
-    textDecoration: "none",
-    paddingLeft: "34px",
-  },
-  buttons: {
-    display: "flex",
-    justifyContent: "flex-end",
-    flexWrap: "wrap",
-    alignItems: "center",
-  },
-  btn: {
-    backgroundColor: "#0F54FF",
-    color: "#fff",
-    padding: "14px 34px",
-    borderRadius: "8px",
-  },
-};
+import styled from "styled-components";
+
+export const HeaderWrap = styled.div`
+  width: 100%;
+
+  nav {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .left {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+
+      img {
+        width: 48px;
+        height: 48px;
+      }
+
+      .navLinks {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .itemLink {
+          padding: 5px 10px;
+          border-radius: 10px;
+          transition: all.3s;
+
+          &.active {
+            background-color: #f1f1f3;
+          }
+        }
+      }
+    }
+
+    .buttons {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      .login {
+        padding: 10px 30px;
+        border-radius: 10px;
+        background-color: #0f54ff;
+        color: white;
+      }
+    }
+  }
+`;
