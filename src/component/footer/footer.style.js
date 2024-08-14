@@ -4,7 +4,7 @@ export const FooterWrap = styled.footer`
   width: 100%;
   background: #333;
   color: #fff;
-  position: fixed;
+  position: relative;
   bottom: 0;
 
   .FooterContainer {
