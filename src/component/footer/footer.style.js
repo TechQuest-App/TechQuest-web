@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const FooterWrap = styled.footer`
   width: 100%;
-  background: #333;
+  background: #232323;
   color: #fff;
   position: relative;
   bottom: 0;
@@ -40,7 +40,9 @@ export const FooterWrap = styled.footer`
         gap: 5px;
 
         img {
-          color: white;
+          backGround: #fff;
+          border-radius: 50%;
+          padding:4px;
         }
       }
     }
