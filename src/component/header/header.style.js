@@ -35,18 +35,5 @@ export const HeaderWrap = styled.div`
         }
       }
     }
-
-    .buttons {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-
-      .login {
-        padding: 10px 30px;
-        border-radius: 10px;
-        background-color: #0f54ff;
-        color: white;
-      }
-    }
   }
 `;

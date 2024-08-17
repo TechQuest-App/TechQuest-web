@@ -1,4 +1,3 @@
-import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import Header from "./component/header/Header";
 import Footer from "./component/footer/Footer";
@@ -7,7 +6,7 @@ import Home from "./pages/home/Home";
 import SignUp from "./component/forms/SignUp";
 function App() {
   return (
-    <>
+    <div>
       <TopHeader />
       <div className="container mx-auto px-4">
         <Header />
@@ -17,7 +16,7 @@ function App() {
         </Routes>
       </div>
       <Footer />
-    </>
+    </div>
   );
 }
 
