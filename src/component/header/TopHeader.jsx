@@ -20,5 +20,15 @@ const TopHeaderWrap = styled.div`
     letter-spacing: 1.5px;
     margin: 10px 10px 0;
     border-radius: 10px;
+
+    @media (max-width: 991px) {
+      letter-spacing: 1px;
+      font-size: 15px;
+    }
+    @media (max-width: 767px) {
+      letter-spacing: 1px;
+      font-size: 10px;
+      padding: 7px 3px;
+    }
   }
 `;

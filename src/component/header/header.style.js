@@ -14,18 +14,26 @@ export const HeaderWrap = styled.div`
       align-items: center;
       gap: 40px;
 
+      @media (max-width: 1199px) {
+        gap: 20px;
+      }
+      @media (max-width: 991px) {
+        gap: 10px;
+      }
+
       img {
-        width: 48px;
-        height: 48px;
+        width: 58px;
+        height: 58px;
+        object-fit: cover;
+
+        @media (max-width: 991px) {
+          width: 48px;
+          height: 48px;
+        }
       }
 
       .navLinks {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-
         .itemLink {
-          padding: 5px 10px;
           border-radius: 10px;
           transition: all.3s;
 

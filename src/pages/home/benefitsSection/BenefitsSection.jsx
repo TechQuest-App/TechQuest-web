@@ -54,16 +54,20 @@ const BenefitsSection = () => {
         {benefitsDetails.map((benefit) => (
           <div
             key={benefit.id}
-            className="flex flex-col justify-between bg-white rounded-md drop-shadow px-12 py-5"
+            className="flex flex-col gap-[30px] justify-between bg-white rounded-xl drop-shadow p-[30px]"
           >
-            <span className="text-[80px] mb-5 font-bold block ml-auto">
-              {benefit.id}
-            </span>
-            <h3 className="text-2xl font-medium mb-3">{benefit.title}</h3>
-            <p>{benefit.description}</p>
+            <div className="ml-auto">
+              <span className="text-[80px] leading-[80px] font-bold">
+                {benefit.id}
+              </span>
+            </div>
+            <div>
+              <h3 className="text-2xl font-medium mb-2">{benefit.title}</h3>
+              <p className="m-0">{benefit.description}</p>
+            </div>
             <MdOutlineArrowOutward
               size={25}
-              className="mt-7 w-[62px] h-[62px] flex justify-center ml-auto items-center p-5 rounded-md text-[#0F54FF] shadow"
+              className="w-[62px] h-[62px] flex justify-center ml-auto items-center p-5 rounded-md text-[#0F54FF] shadow m-0"
             />
           </div>
         ))}

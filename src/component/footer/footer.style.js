@@ -8,21 +8,13 @@ export const FooterWrap = styled.footer`
   bottom: 0;
   left: 0;
 
-  .FooterContainer {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 60px 0;
-    color: black;
-  }
-
   .col {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
 
     .LogoContainer {
-      margin-bottom: 30px;
+      margin-bottom: 12px;
 
       img {
         width: 48px;

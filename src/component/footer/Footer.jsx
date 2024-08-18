@@ -13,7 +13,7 @@ import {
 function Footer() {
   return (
     <FooterWrap>
-      <div className="container mx-auto FooterContainer">
+      <div className="container px-4 mx-auto grid gap-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 text-black py-[60px]">
         <div className="col">
           <div className="LogoContainer">
             <img src={TechQuestLogo} alt="TechQuest Logo" />
@@ -35,7 +35,7 @@ function Footer() {
         </div>
 
         <ul className="Col flex flex-col gap-2">
-          <h6 className="headCol mb-2 text-[20px] font-bold">Home</h6>
+          <h6 className="headCol mb-3 text-[20px] font-bold">Home</h6>
           <li className="item">Benefits</li>
           <li className="item">Our Courses</li>
           <li className="item">Our Testimonials</li>
@@ -43,14 +43,14 @@ function Footer() {
         </ul>
 
         <ul className="Col flex flex-col gap-2">
-          <h6 className="headCol mb-2 text-[20px] font-bold">About Us</h6>
+          <h6 className="headCol mb-3 text-[20px] font-bold">About Us</h6>
           <li className="item">Company</li>
           <li className="item">Achievements</li>
           <li className="item">Our Goals</li>
         </ul>
 
         <div className="ColSocial flex flex-col gap-2">
-          <h6 className="headCol mb-2 text-[20px] font-bold">
+          <h6 className="headCol mb-3 text-[20px] font-bold">
             Social Profiles
           </h6>
           <div className="iconsSocial flex items-center gap-2">
@@ -77,7 +77,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <p className="copyRight text-center pt-5 pb-2">
+      <p className="copyRight text-center pt-5 pb-2 text-black">
         &copy; 2024 TechQuest. All rights reserved to indecoding TEAM.
       </p>
     </FooterWrap>
