@@ -38,18 +38,22 @@ function Header() {
         </div>
 
         <div className="buttons flex items-center gap-1 md:gap-2 ml-auto mr-3">
-          <Button
-            name="Sign Up"
-            style={
-              "py-[5px] px-[10px] md:py-[10px] md:px-[25px] lg:py-[14px] lg:px-[34px]"
-            }
-          />
-          <Button
-            name="Login"
-            style={
-              "bg-[#0F54FF] text-white py-[5px] px-[10px] md:py-[10px] md:px-[25px] lg:py-[14px] lg:px-[34px]"
-            }
-          />
+          <Link to={"signup"}>
+            <Button
+              name="Sign Up"
+              style={
+                "py-[5px] px-[10px] md:py-[10px] md:px-[25px] lg:py-[14px] lg:px-[34px]"
+              }
+            />
+          </Link>
+          <Link to={"login"}>
+            <Button
+              name="Login"
+              style={
+                "bg-[#0F54FF] text-white py-[5px] px-[10px] md:py-[10px] md:px-[25px] lg:py-[14px] lg:px-[34px]"
+              }
+            />
+          </Link>
         </div>
 
         <div className="sideMenu md:hidden">

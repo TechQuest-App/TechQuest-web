@@ -3,15 +3,16 @@ import { signupImg } from "../../assets";
 export const Signup = {
   fontFamily: "Poppins",
   width: "100%",
-  backgroundcolor: "#F7F7F8",
+  backgroundColor: "#F7F7F8",
   display: "flex",
   flexDirection: "row",
   justifyContent: "space-between",
   alignItems: "start",
-  margin: "70px auto  100px",
+  margin: "70px auto 100px",
 
   leftsection: {
-    width: "45%",
+    height: "100%",
+    flex: 2,
 
     title: {
       h2: {
@@ -32,11 +33,20 @@ export const Signup = {
       borderRadius: "20px",
       margin: "12px",
 
+      "@media (max-width: 767px)": {
+        width: "20%",
+        margin: "8px 0",
+      },
+      "@media (max-width: 991px)": {
+        width: "30%",
+        margin: "8px 0",
+      },
+
       img: {
         padding: "12px",
         backgroundColor: "blue",
         borderRadius: "8px",
-        margin: "24px ",
+        margin: "75px 24px 24px",
       },
       txt: {
         fontSize: "18px",
@@ -45,7 +55,7 @@ export const Signup = {
         flexDirection: "column",
         alignItems: "start",
 
-        h2: { fontWeight: 500, fontSize: "24px", lineHeight:'44px' },
+        h2: { fontWeight: 500, fontSize: "24px", lineHeight: "44px" },
         p: { fontWeight: 400, fontSize: "20px", lineHeight: "36px" },
       },
     },
@@ -61,7 +71,7 @@ export const Signup = {
   },
 
   rightsection: {
-    width: "45%",
+    flex: 1,
     height: "90%",
     padding: "50px",
     backgroundColor: "#fff",
@@ -105,8 +115,8 @@ export const Signup = {
       borderRadius: "10px",
       marginTop: "24px",
       fontSize: "18px",
-        fontWeight: "700",
-      textAlign:'center'
+      fontWeight: "700",
+      textAlign: "center",
     },
     or: {
       display: "flex",

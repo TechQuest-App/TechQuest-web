@@ -36,7 +36,7 @@ function SignUp() {
   }, []);
 
   return (
-    <container style={Signup}>
+    <div className="flex flex-col lg:flex-row mt-[70px] mb-[100px] gap-20 lg:gap-0">
       <div style={Signup.leftsection}>
         <div style={Signup.leftsection.title}>
           <h2 style={Signup.leftsection.title.h2}>
@@ -69,7 +69,9 @@ function SignUp() {
             <div style={Signup.leftsection.txt}>
               <h4>User Experience Class</h4>
               <h5>Today at : {time}</h5>
-              <button className="btn" style={Signup.rightsection.BTN}>Join Now</button>
+              <button className="btn" style={Signup.rightsection.BTN}>
+                Join Now
+              </button>
             </div>
           </div>
         </div>
@@ -99,7 +101,7 @@ function SignUp() {
             />
           </div>
           <div style={Signup.rightsection.oneInput}>
-            <label style={Signup.rightsection.label}>PassWord</label>
+            <label style={Signup.rightsection.label}>Password</label>
             <input
               style={Signup.rightsection.input}
               type="password"
@@ -115,7 +117,7 @@ function SignUp() {
               I agree to the terms & conditions
             </label>
           </div>
-            <button style={Signup.rightsection.BTN}>Sign Up</button>
+          <button style={Signup.rightsection.BTN}>Sign Up</button>
         </form>
         <div style={Signup.rightsection.or}>
           <span style={Signup.rightsection.leftLine}></span>
@@ -138,7 +140,7 @@ function SignUp() {
           <span style={{ color: "blue", fontWeight: "600" }}> Log In </span>
         </p>
       </div>
-    </container>
+    </div>
   );
 }
 

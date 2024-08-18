@@ -1,33 +1,33 @@
-.oneReg-1{
-    position: relative;
-    top: 40%
+.oneReg-1 {
+  position: relative;
+  top: 40%;
 }
-.oneReg-2{
-    position: relative;
-    top: 50%;
-    right: -66%;
+.oneReg-2 {
+  position: relative;
+  top: 50%;
+  right: -50%;
 }
-.oneReg-3{
-    position: relative;
-    top: 40%;
-    width: 45%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+.oneReg-3 {
+  position: relative;
+  top: 40%;
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
-.oneReg-3::after{
-   content: '';
-    color: green;
-    position: absolute;
-    width: 14px;
-    height: 14px;
-    border: 1px solid #fff;
-    border-radius: 50%;
-    top: 90px;
-    right: -10px;
-    z-index: 9999;
+.oneReg-3::after {
+  content: "";
+  color: green;
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  top: 90px;
+  right: -10px;
+  z-index: 9999;
 }
-.btn{
-    padding: 12px !important;
-    margin: 14px;
+.btn {
+  padding: 12px !important;
+  margin: 14px;
 }
