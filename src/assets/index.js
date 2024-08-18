@@ -7,7 +7,7 @@ import twitter from "./twitter.png";
 import linkedin from "./linkedin.png";
 import github from "./github.png";
 
-// --------  sign up -------------
+// -------- sign up -------------
 import calender from "./calendar.png";
 import ready_cretificate from "./ready_cretificate.png";
 import signupImg from "./signupImg.png";
@@ -15,6 +15,10 @@ import UX_class from "./UX_class.png";
 import blue_FB from "./blue_FB.png";
 import google from "./google.png";
 import apple from "./apple.png";
+
+// -------- login up -------------
+import loginImg from "../assets/image 1.png";
+import lamp from "../assets/Group.png";
 
 export {
   TechQuestLogo,
@@ -32,4 +36,6 @@ export {
   blue_FB,
   google,
   apple,
+  loginImg,
+  lamp,
 };

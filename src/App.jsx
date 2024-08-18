@@ -4,6 +4,7 @@ import Footer from "./component/footer/Footer";
 import TopHeader from "./component/header/TopHeader";
 import Home from "./pages/home/Home";
 import SignUp from "./component/forms/SignUp";
+import Login from "./component/forms/Login";
 function App() {
   return (
     <div>
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/signup" element={<SignUp />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
       </div>
       <Footer />
