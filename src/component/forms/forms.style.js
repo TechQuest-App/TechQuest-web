@@ -1,156 +1,279 @@
 import styled from "styled-components";
-import { loginImg, signupImg } from "../../assets/";
+import { loginImg, signupImg } from "../../assets";
 
-export const Signup = {
-  fontFamily: "Poppins",
-  width: "100%",
-  backgroundColor: "#F7F7F8",
-  display: "flex",
-  flexDirection: "row",
-  justifyContent: "space-between",
-  alignItems: "start",
-  margin: "70px auto 100px",
+export const SignupWrap = styled.div`
+  width: 100%;
+  background-color: #f7f7f8;
+  display: flex;
+  margin: 100px 0 100px;
 
-  leftsection: {
-    height: "100%",
-    flex: 2,
+  @media (max-width: 640px) {
+    margin: 50px 0;
+  }
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    gap: 50px;
+  }
 
-    title: {
-      h2: {
-        fontWeight: 500,
-        fontSize: "38px",
-        lineHeight: "57px",
-      },
-      p: { fontWeight: 400, fontSize: "18px", lineHeight: "27px" },
-    },
-    oneReg: {
-      width: "45%",
-      display: "flex",
-      flexDirection: "row",
-      justifyContent: "start",
-      alignItems: "center",
-      background: "#fff",
-      backdropFilter: "blur(10px)",
-      borderRadius: "20px",
-      margin: "12px",
+  .leftsection {
+    position: relative;
+    height: 100%;
+    flex: 2;
 
-      "@media (max-width: 767px)": {
-        width: "20%",
-        margin: "8px 0",
-      },
-      "@media (max-width: 991px)": {
-        width: "30%",
-        margin: "8px 0",
-      },
+    .title {
+      h2 {
+        font-weight: 500;
+        font-size: 38px;
+        line-height: 57px;
+        margin-bottom: 6px;
 
-      img: {
-        padding: "12px",
-        backgroundColor: "blue",
-        borderRadius: "8px",
-        margin: "75px 24px 24px",
-      },
-      txt: {
-        fontSize: "18px",
-        color: "#000",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "start",
+        @media (max-width: 640px) {
+          font-size: 28px;
+          line-height: 1.3;
+        }
+      }
 
-        h2: { fontWeight: 500, fontSize: "24px", lineHeight: "44px" },
-        p: { fontWeight: 400, fontSize: "20px", lineHeight: "36px" },
-      },
-    },
-    haveImgBG: {
-      zIndex: 99,
-      backgroundImage: `url(${signupImg})`,
-      backgroundSize: "cover",
-      backgroundPosition: "center",
-      backgroundRepeat: "no-repeat",
-      height: "800px",
-      width: "100%",
-    },
-  },
+      p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
 
-  rightsection: {
-    flex: 1,
-    height: "90%",
-    padding: "50px",
-    backgroundColor: "#fff",
+        @media (max-width: 640px) {
+          font-size: 16px;
+          line-height: 1.3;
+        }
+      }
+    }
 
-    signupForm: {
-      width: "100%",
-      display: "flex",
-      flexDirection: "column",
-      justifyContent: "space-between",
-      alignItems: "flex-start",
-    },
-    text: {
-      textAlign: "center",
-      marginBottom: "50px",
-    },
-    title: {
-      fontSize: "48px",
-      fontWeight: "600",
-    },
-    p: {
-      fontSize: "18px",
-    },
-    oneInput: {
-      width: "100%",
-      display: "flex",
-      flexDirection: "column",
-      marginBottom: "14px",
-    },
-    label: { fontSize: "18px", marginBottom: "14px" },
-    input: {
-      padding: "24px",
-      border: "1px solid #F1F1F3",
-      borderRadius: "10px",
-    },
-    BTN: {
-      padding: "18px 20px",
-      backgroundColor: "blue",
-      width: "100%",
-      color: "#fff",
-      border: "none",
-      borderRadius: "10px",
-      marginTop: "24px",
-      fontSize: "18px",
-      fontWeight: "700",
-      textAlign: "center",
-    },
-    or: {
-      display: "flex",
-      flexDirection: "row",
-      justifyContent: "space-between",
-      alignItems: "center",
-      margin: "30px auto",
-    },
-    OR: {
-      fontSize: "18px",
-      color: "#98989A",
-    },
-    leftLine: {
-      width: "40%",
-      borderTop: "1px solid #98989A",
-    },
-    rightLine: {
-      width: "40%",
-      borderTop: "1px solid #98989A",
-    },
-    platforms: {
-      display: "flex",
-      flexDirection: "row",
-      justifyContent: "center",
-    },
-    icon: {
-      backgroundColor: "#F5F5F5",
-      padding: "24px",
-      borderRadius: "50%",
-      margin: "32px 8px",
-    },
-  },
-};
+    .oneReg1,
+    .oneReg2,
+    .oneReg3 {
+      position: absolute;
+      background-color: #ffffffcc;
+      border-radius: 20px;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      width: fit-content;
+
+      h4 {
+        font-size: 24px;
+        font-weight: 500;
+        color: #595959;
+
+        @media (max-width: 640px) {
+          font-size: 14px;
+          gap: 14px;
+        }
+        @media (min-width: 641px) and (max-width: 1280px) {
+          font-size: 18px;
+          gap: 20px;
+        }
+      }
+
+      h5 {
+        font-size: 20px;
+        color: #545567;
+
+        @media (max-width: 640px) {
+          font-size: 12px;
+        }
+        @media (min-width: 641px) and (max-width: 1280px) {
+          font-size: 16px;
+        }
+      }
+
+      @media (max-width: 640px) {
+        padding: 10px;
+        gap: 5px;
+      }
+      @media (min-width: 641px) and (max-width: 1280px) {
+        padding: 10px;
+        gap: 12px;
+      }
+    }
+
+    .oneReg1 {
+      top: 50%;
+      left: 0;
+
+      img {
+        width: 50px;
+        height: 50px;
+        background-color: #0f54ff;
+        padding: 10px;
+        border-radius: 10px;
+
+        @media (max-width: 640px) {
+          width: 30px;
+          height: 30px;
+          padding: 5px;
+        }
+      }
+
+      @media (max-width: 640px) {
+        top: 50%;
+        left: 0;
+      }
+    }
+    .oneReg2 {
+      top: 70%;
+      right: 60px;
+
+      img {
+        width: 50px;
+        height: 50px;
+        background-color: #0f54ff;
+        padding: 10px;
+        border-radius: 10px;
+
+        @media (max-width: 640px) {
+          width: 30px;
+          height: 30px;
+          padding: 5px;
+        }
+      }
+
+      @media (max-width: 640px) {
+        top: 65%;
+        right: 0px;
+      }
+    }
+    .oneReg3 {
+      bottom: 0;
+      left: 0;
+
+      .ingContainer {
+        position: relative;
+        margin-bottom: auto;
+
+        img {
+          @media (max-width: 640px) {
+            width: 35px;
+            height: 35px;
+          }
+        }
+
+        .active {
+          position: absolute;
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          border: 2px solid white;
+          background-color: #2ebb5e;
+          top: 40px;
+          right: -1px;
+
+          @media (max-width: 640px) {
+            width: 10px;
+            height: 10px;
+            top: 25px;
+            right: -1px;
+          }
+        }
+      }
+
+      @media (max-width: 640px) {
+        bottom: -9px;
+      }
+    }
+  }
+
+  .rightsection {
+    flex: 1;
+    height: 90%;
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 12px;
+
+    @media (max-width: 640px) {
+      padding: 10px;
+    }
+    @media (min-width: 641px) and (max-width: 1280px) {
+      padding: 20px;
+    }
+
+    .text {
+      text-align: center;
+      margin-bottom: 50px;
+
+      @media (max-width: 640px) {
+        margin-bottom: 30px;
+      }
+      @media (min-width: 641px) and (max-width: 1280px) {
+        margin-bottom: 20px;
+      }
+    }
+
+    .title {
+      font-size: 48px;
+      font-weight: 600;
+      margin-bottom: 12px;
+
+      @media (max-width: 640px) {
+        font-size: 38px;
+      }
+    }
+
+    p {
+      font-size: 18px;
+
+      @media (max-width: 640px) {
+        font-size: 16px;
+      }
+    }
+
+    .signupForm {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      .oneInput {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 14px;
+
+        label {
+          font-size: 18px;
+          margin-bottom: 14px;
+        }
+
+        input {
+          padding: 12px;
+          border-radius: 10px;
+          outline: none;
+
+          @media (min-width: 1280px) {
+            padding: 24px;
+          }
+        }
+      }
+    }
+
+    .or {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin: 30px auto;
+
+      .leftLine,
+      .rightLine {
+        width: 40%;
+        border-top: 1px solid #98989a;
+      }
+
+      .OR {
+        font-size: 18px;
+        color: #98989a;
+      }
+    }
+  }
+`;
 
 export const LoginLeftWrap = styled.div`
   .bg {
@@ -192,7 +315,7 @@ export const LoginLeftWrap = styled.div`
       position: absolute;
       right: -50px;
       bottom: 15px;
-      height: 80%;
+      height: calc(100% + 30px);
       width: 100%;
 
       @media (max-width: 1024px) {
@@ -210,6 +333,17 @@ export const LoginLeftWrap = styled.div`
     right: -35px;
     width: 50px;
     height: 50px;
+
+    @media (max-width: 991px) {
+      top: -25px;
+      right: -15px;
+    }
+    @media (max-width: 767px) {
+      top: -15px;
+      right: -8px;
+      width: 40px;
+      height: 40px;
+    }
   }
 
   .circle {
@@ -220,17 +354,16 @@ export const LoginLeftWrap = styled.div`
     position: absolute;
     top: -35px;
     left: 15px;
-  }
 
-  .triangle {
-    position: absolute;
-    top: 50%;
-    right: -70px;
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
-    border-bottom: 30px solid #0f54ff;
-    width: 0;
-    height: 0;
-    transform: rotate(45deg);
+    @media (max-width: 991px) {
+      top: -8px;
+      left: -8px;
+    }
+    @media (max-width: 767px) {
+      width: 25px;
+      height: 25px;
+      top: -5px;
+      left: 0px;
+    }
   }
 `;

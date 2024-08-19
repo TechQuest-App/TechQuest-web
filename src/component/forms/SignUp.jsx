@@ -1,8 +1,6 @@
-import { Signup } from "./forms.style";
-import "./custom.css";
-
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { SignupWrap } from "./forms.style";
 import {
   apple,
   blue_FB,
@@ -10,7 +8,9 @@ import {
   google,
   ready_cretificate,
   UX_class,
+  signupImg,
 } from "../../assets/index";
+import Button from "../button/Button";
 
 function SignUp() {
   const [time, setTime] = useState(() => {
@@ -28,7 +28,6 @@ function SignUp() {
       setTime(`${hour} : ${minutes}`);
     };
 
-    updateClock(); // Update the clock immediately
     const intervalId = setInterval(updateClock, 1000);
 
     // Clean up the interval on component unmount
@@ -36,111 +35,113 @@ function SignUp() {
   }, []);
 
   return (
-    <div className="flex flex-col lg:flex-row mt-[70px] mb-[100px] gap-20 lg:gap-0">
-      <div style={Signup.leftsection}>
-        <div style={Signup.leftsection.title}>
-          <h2 style={Signup.leftsection.title.h2}>
-            Embark on a journey of discovery.
-          </h2>
-          <p style={Signup.leftsection.title.p}>
-            Explore diverse courses and expand your knowledge horizon
-          </p>
+    <SignupWrap>
+      <div className="leftsection">
+        <div className="title">
+          <h2>Embark on a journey of discovery.</h2>
+          <p>Explore diverse courses and expand your knowledge horizon</p>
         </div>
-        <div style={Signup.leftsection.haveImgBG}>
-          <div className="oneReg-1" style={Signup.leftsection.oneReg}>
-            <img style={Signup.leftsection.oneReg.img} src={calender} />
-            <div style={Signup.leftsection.oneReg.txt}>
+
+        <div>
+          <img src={signupImg} alt="" />
+          <div className="oneReg1">
+            <img className="loginImg" src={calender} alt="Calendar" />
+            <div className="txt">
               <h4>250k</h4>
               <h5>Assisted Student</h5>
             </div>
           </div>
-          <div className="oneReg-2" style={Signup.leftsection.oneReg}>
-            <img
-              style={Signup.leftsection.oneReg.img}
-              src={ready_cretificate}
-            />
-            <div style={Signup.leftsection.txt}>
+
+          <div className="oneReg2">
+            <img src={ready_cretificate} alt="Certificate Ready" />
+            <div className="txt">
               <h4>Congratulations</h4>
               <h5>Your certificate is ready</h5>
             </div>
           </div>
-          <div className="oneReg-3" style={Signup.leftsection.oneReg}>
-            <img src={UX_class} />
-            <div style={Signup.leftsection.txt}>
+
+          <div className="oneReg3">
+            <div className="ingContainer">
+              <img src={UX_class} alt="UX Class" />
+              <span className="active"></span>
+            </div>
+
+            <div className="txt flex flex-col">
               <h4>User Experience Class</h4>
               <h5>Today at : {time}</h5>
-              <button className="btn" style={Signup.rightsection.BTN}>
-                Join Now
-              </button>
+              <Button
+                name="Join Now"
+                style="mt-2 text-[16px] md:text-[20px] text-white font-semibold text-center w-[70%] bg-[#0F54FF] py-1"
+              />
             </div>
           </div>
         </div>
       </div>
-      <div style={Signup.rightsection}>
-        <div style={Signup.rightsection.text}>
-          <h2 style={Signup.rightsection.title}>Sign Up</h2>
-          <p style={Signup.rightsection.p}>
-            Begin learning with just a few clicks
-          </p>
+      <div className="rightsection">
+        <div className="text">
+          <h2 className="title">Sign Up</h2>
+          <p>Begin learning with just a few clicks</p>
         </div>
-        <form style={Signup.rightsection.signupForm}>
-          <div style={Signup.rightsection.oneInput}>
-            <label style={Signup.rightsection.label}>Name</label>
-            <input
-              style={Signup.rightsection.input}
-              type="text"
-              placeholder="Full Name"
-            />
+        <form className="signupForm">
+          <div className="oneInput">
+            <label>Name</label>
+            <input type="text" placeholder="Full Name" />
           </div>
-          <div style={Signup.rightsection.oneInput}>
-            <label style={Signup.rightsection.label}>Email</label>
-            <input
-              style={Signup.rightsection.input}
-              type="email"
-              placeholder="Email Address"
-            />
+          <div className="oneInput">
+            <label>Email</label>
+            <input type="email" placeholder="Email Address" />
           </div>
-          <div style={Signup.rightsection.oneInput}>
-            <label style={Signup.rightsection.label}>Password</label>
-            <input
-              style={Signup.rightsection.input}
-              type="password"
-              placeholder="Password"
-            />
+          <div className="oneInput">
+            <label>Password</label>
+            <input type="password" placeholder="Password" />
           </div>
-          <div>
+          <div className="flex items-center">
             <input
               style={{ marginRight: "12px", fontSize: "24px" }}
               type="checkbox"
             />
-            <label style={Signup.rightsection.label}>
-              I agree to the terms & conditions
-            </label>
+            <label>I agree to the terms & conditions</label>
           </div>
-          <button style={Signup.rightsection.BTN}>Sign Up</button>
+          <Button
+            name={"Login"}
+            style={
+              "w-full mt-6 bg-[#0F54FF] text-center py-[12px] lg:py-[18px] text-white mb-6 "
+            }
+          />
         </form>
-        <div style={Signup.rightsection.or}>
-          <span style={Signup.rightsection.leftLine}></span>
-          <p style={Signup.rightsection.OR}>OR</p>
-          <span style={Signup.rightsection.rightLine}></span>
+        <div className="or">
+          <span className="leftLine"></span>
+          <p className="OR">OR</p>
+          <span className="rightLine"></span>
         </div>
-        <div style={Signup.rightsection.platforms}>
-          <Link to="/apple" style={Signup.rightsection.linkApple}>
-            <img src={apple} style={Signup.rightsection.icon} />
+        <div className="flex items-center justify-center gap-2 md:gap-4 mb-6">
+          <Link
+            to="/apple"
+            className="w-[54px] h-[54px] xl:w-[74px] xl:h-[74px] rounded-full p-[10px] bg-[#F5F5F5] flex items-center justify-center"
+          >
+            <img src={apple} />
           </Link>
-          <Link to="/google" style={Signup.rightsection.linkGoogle}>
-            <img src={google} style={Signup.rightsection.icon} />
+          <Link
+            to="/google"
+            className="w-[54px] h-[54px] xl:w-[74px] xl:h-[74px] rounded-full p-[10px] bg-[#F5F5F5] flex items-center justify-center"
+          >
+            <img src={google} />
           </Link>
-          <Link to="/facebook" style={Signup.rightsection.linkFacebook}>
-            <img src={blue_FB} style={Signup.rightsection.icon} />
+          <Link
+            to="/facebook"
+            className="w-[54px] h-[54px] xl:w-[74px] xl:h-[74px] rounded-full p-[10px] bg-[#F5F5F5] flex items-center justify-center"
+          >
+            <img src={blue_FB} />
           </Link>
         </div>
-        <p style={{ fontSize: "18px", textAlign: "center" }}>
+        <p className="text-[16px] md:text-[18px] text-center">
           Already Have An Account?
-          <span style={{ color: "blue", fontWeight: "600" }}> Log In </span>
+          <Link to={"login"} className="text-[#0F54FF] font-semibold">
+            Login
+          </Link>
         </p>
       </div>
-    </div>
+    </SignupWrap>
   );
 }
 

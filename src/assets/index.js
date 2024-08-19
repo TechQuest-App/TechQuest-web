@@ -16,23 +16,19 @@ import blue_FB from "./blue_FB.png";
 import google from "./google.png";
 import apple from "./apple.png";
 
-
 import loginImg from "./loginImg.png";
+import lamp from "./lamp.png";
+import eye from "./fluent_eye-16-regular.png";
 
 // ------------------  card  ---------------------
-import imgCourse from './imgCourse.png'
+import imgCourse from "./imgCourse.png";
 
-
-import Testimonial_1 from './Testimonial_1.png'
+import Testimonial_1 from "./Testimonial_1.png";
 
 // -----------  last section in home  ---------------
-import xx from './xx.png'
+import xx from "./xx.png";
 import rightArrow from "./rightArrow.png";
-import plus from './plus.png'
-
-
-
-
+import plus from "./plus.png";
 
 export {
   TechQuestLogo,
@@ -56,4 +52,6 @@ export {
   xx,
   rightArrow,
   plus,
+  lamp,
+  eye,
 };
