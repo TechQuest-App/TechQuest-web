@@ -1,4 +1,5 @@
-import { signupImg } from "../../assets";
+import styled from "styled-components";
+import { loginImg, signupImg } from "../../assets";
 
 export const Signup = {
   fontFamily: "Poppins",
@@ -150,3 +151,86 @@ export const Signup = {
     },
   },
 };
+
+export const LoginLeftWrap = styled.div`
+  .bg {
+    width: 100%;
+    background-color: #e5eeff;
+    border-radius: 80px;
+    position: relative;
+    padding: 20px;
+    height: 717px;
+    /* background-image: url(${loginImg});
+    background-size: cover;
+    background-position: center; */
+
+    @media (max-width: 1024px) {
+      height: 500px;
+    }
+    @media (max-width: 480px) {
+      height: 300px;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: -15px;
+      left: 15px;
+      width: 100%;
+      height: 100%;
+      border: 1px solid #0f54ff;
+      border-radius: 80px;
+
+      @media (max-width: 991px) {
+        border: none;
+      }
+      @media (max-width: 480px) {
+        border: none;
+      }
+    }
+
+    .loginImg {
+      position: absolute;
+      right: -50px;
+      bottom: 15px;
+      height: 100%;
+      width: 100%;
+
+      @media (max-width: 1024px) {
+        right: 0px;
+      }
+      @media (max-width: 991px) {
+        bottom: 0px;
+      }
+    }
+  }
+
+  .lamp {
+    position: absolute;
+    top: -40px;
+    right: -35px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #0f54ff;
+    position: absolute;
+    top: -35px;
+    left: 15px;
+  }
+
+  .triangle {
+    position: absolute;
+    top: 50%;
+    right: -70px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 30px solid #0f54ff;
+    width: 0;
+    height: 0;
+    transform: rotate(45deg);
+  }
+`;
