@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { loginImg, signupImg } from "../../assets";
+import { loginImg, signupImg } from "../../assets/";
 
 export const Signup = {
   fontFamily: "Poppins",
@@ -192,7 +192,7 @@ export const LoginLeftWrap = styled.div`
       position: absolute;
       right: -50px;
       bottom: 15px;
-      height: 100%;
+      height: 80%;
       width: 100%;
 
       @media (max-width: 1024px) {

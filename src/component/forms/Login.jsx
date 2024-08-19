@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { lamp, loginImg, apple, blue_FB, google } from "../../assets";
+import {  loginImg, apple, blue_FB, google } from "../../assets/index";
 import Button from "../button/Button";
 import { LoginLeftWrap } from "./forms.style";
 
@@ -19,7 +19,7 @@ const Login = () => {
         <LoginLeftWrap>
           <div className="bg">
             <img src={loginImg} alt="" className="loginImg" />
-            <img src={lamp} alt="" className="lamp hidden md:block" />
+            {/* <img src={lamp} alt="" className="lamp hidden md:block" /> */}
             <span className="circle hidden sm:block"></span>
             <span className="triangle hidden lg:block"></span>
             <span className="lines absolute -left-[10px] -bottom-[14px] -rotate-45 flex flex-col items-end gap-4">

@@ -16,7 +16,8 @@ import blue_FB from "./blue_FB.png";
 import google from "./google.png";
 import apple from "./apple.png";
 
-<<<<<<< HEAD
+
+import loginImg from "./loginImg.png";
 
 // ------------------  card  ---------------------
 import imgCourse from './imgCourse.png'
@@ -32,11 +33,6 @@ import plus from './plus.png'
 
 
 
-=======
-// -------- login up -------------
-import loginImg from "../assets/image 1.png";
-import lamp from "../assets/Group.png";
->>>>>>> 0810a0d9752e6a05b0a13936aa4de57c3f6c5fc0
 
 export {
   TechQuestLogo,
@@ -50,18 +46,14 @@ export {
   calender,
   ready_cretificate,
   signupImg,
+  loginImg,
   UX_class,
   blue_FB,
   google,
   apple,
-<<<<<<< HEAD
   imgCourse,
   Testimonial_1,
   xx,
   rightArrow,
   plus,
-=======
-  loginImg,
-  lamp,
->>>>>>> 0810a0d9752e6a05b0a13936aa4de57c3f6c5fc0
 };
