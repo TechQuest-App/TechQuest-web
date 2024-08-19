@@ -1,10 +1,10 @@
 import { HeaderWrap } from "./header.style.js";
 import { Link } from "react-router-dom";
-import TechQuestLogo from "../../assets/TechQuest_Logo.png";
 import { CgMenu } from "react-icons/cg";
 import Button from "../button/Button.jsx";
 import { IoClose } from "react-icons/io5";
 import { useState } from "react";
+import TechQuestLogo from "../../assets/TechQuest_Logo.png";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);

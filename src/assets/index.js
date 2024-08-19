@@ -16,6 +16,22 @@ import blue_FB from "./blue_FB.png";
 import google from "./google.png";
 import apple from "./apple.png";
 
+
+// ------------------  card  ---------------------
+import imgCourse from './imgCourse.png'
+
+
+import Testimonial_1 from './Testimonial_1.png'
+
+// -----------  last section in home  ---------------
+import xx from './xx.png'
+import rightArrow from "./rightArrow.png";
+import plus from './plus.png'
+
+
+
+
+
 export {
   TechQuestLogo,
   mail,
@@ -32,4 +48,9 @@ export {
   blue_FB,
   google,
   apple,
+  imgCourse,
+  Testimonial_1,
+  xx,
+  rightArrow,
+  plus,
 };

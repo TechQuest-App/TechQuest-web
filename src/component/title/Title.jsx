@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import Button from "../button/Button";
 
 const Title = ({ name, dsc, btnName }) => {
@@ -16,5 +17,9 @@ const Title = ({ name, dsc, btnName }) => {
     </div>
   );
 };
-
+Title.propTypes = {
+  name: PropTypes.string.isRequired,
+  dsc: PropTypes.string.isRequired,
+  btnName: PropTypes.string.isRequired,
+};
 export default Title;
