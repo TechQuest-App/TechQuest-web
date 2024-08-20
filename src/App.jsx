@@ -15,6 +15,7 @@ import Home from "./pages/home/Home";
 import MyCourses from "./pages/MyCourses/MyCourses";
 import Contact from "./pages/contact/Contact";
 import AboutUs from "./pages/aboutUs/AboutUs";
+import Pricing from "./pages/home/pricing/Pricing";
 
 // // Lazy-loaded components
 // const Home = lazy(() => import('./Home'));
@@ -40,6 +41,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/courses" element={<MyCourses />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/pricing" element={<Pricing />} />
           <Route path="/aboutUs" element={<AboutUs />} />
         </Routes>
       </div>

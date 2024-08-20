@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <div className="my-[50px] md:my-[100px] flex flex-col lg:flex-row gap-8">
       <div className="flex flex-col flex-1">
-        <div className="mb-[100px] lg:mb-[200px]">
+        <div className="mb-[100px]">
           <h2 className="text-[28px] md:text-[38px] xl:text-[48px] mb-1 font-semibold">
             Contact US
           </h2>
@@ -26,8 +26,8 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
-          <div>
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+          <div className="p-4 bg-white text-center rounded-md">
             <h4 className="text-[18px] md:text-[20px] lg:text-[24px] mb-6 font-medium">
               Customer Support
             </h4>
@@ -36,9 +36,9 @@ const Contact = () => {
               concerns or queries you may have
             </p>
           </div>
-          <div>
+          <div className="p-4 bg-white text-center rounded-md">
             <h4 className="text-[18px] md:text-[20px] lg:text-[24px] mb-6 font-medium">
-              Feedback and Suggestions
+              Feedback
             </h4>
             <p className="">
               We value your feedback and are continuously worknig to improve
@@ -46,7 +46,7 @@ const Contact = () => {
               TuchQuest
             </p>
           </div>
-          <div>
+          <div className="p-4 bg-white text-center rounded-md">
             <h4 className="text-[18px] md:text-[20px] lg:text-[24px] mb-6 font-medium">
               Media Inquiries
             </h4>
@@ -93,7 +93,7 @@ const Contact = () => {
             />
           </div>
           <div className="flex items-center mb-6">
-            <select className="md:p-4 p-3 rounded-[10px] border-[1px] border-[#F1F1F3] bg-[#FCFCFD] outline-none">
+            <select className="md:px-4 px-3 h-[50px] md:h-[58px] rounded-l-md border-[1px] border-[#F1F1F3] bg-[#FCFCFD] outline-none">
               <option value="20" defaultValue>
                 +20
               </option>
@@ -104,7 +104,7 @@ const Contact = () => {
             <input
               type="phone"
               placeholder="Phone number"
-              className="md:p-4 p-3 rounded-[10px] border-[1px] border-[#F1F1F3] bg-[#FCFCFD] outline-none w-full"
+              className="md:p-4 p-3 rounded-r-md border-[1px] border-[#F1F1F3] bg-[#FCFCFD] outline-none w-full"
             />
           </div>
           <textarea
