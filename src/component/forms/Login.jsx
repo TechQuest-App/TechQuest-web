@@ -65,7 +65,7 @@ const Login = () => {
               <img
                 src={eye}
                 alt="Toggle password visibility"
-                className="absolute right-3 lg:top-[25px] xl:top-[37px] transform -translate-y-1/2 cursor-pointer"
+                className="absolute right-3 top-[25px] xl:top-[37px] transform -translate-y-1/2 cursor-pointer"
               />
             </div>
 

@@ -54,7 +54,7 @@ const BenefitsSection = () => {
         {benefitsDetails.map((benefit) => (
           <div
             key={benefit.id}
-            className="flex flex-col gap-[30px] justify-between bg-white rounded-xl drop-shadow p-[30px]"
+            className="flex flex-col gap-[30px] justify-between bg-white rounded-xl p-[30px]"
           >
             <div className="ml-auto">
               <span className="text-[80px] leading-[80px] font-bold">

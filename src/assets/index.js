@@ -26,7 +26,7 @@ import imgCourse from "./imgCourse.png";
 import Testimonial_1 from "./Testimonial_1.png";
 
 // -----------  last section in home  ---------------
-import xx from "./xx.png";
+import xIcon from "./xx.png";
 import rightArrow from "./rightArrow.png";
 import plus from "./plus.png";
 
@@ -49,7 +49,7 @@ export {
   apple,
   imgCourse,
   Testimonial_1,
-  xx,
+  xIcon,
   rightArrow,
   plus,
   lamp,

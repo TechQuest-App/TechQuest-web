@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import { CourseCard } from "../../component/card/card.style";
-import  Button  from "../button/Button";
+import Button from "../button/Button";
 
 function Card({
   imgCourse,
@@ -11,13 +11,14 @@ function Card({
   technologies,
 }) {
   return (
-    // <CourseCard key={index}>
     <CourseCard>
       <div className="uppper">
         <img src={imgCourse} alt="Course Image" />
         <div className="dataCourse">
-          <p className="weeks">{numWeeks} Weeks</p>
-          <p className="level">{level}</p>
+          <div className="flex items-center gap-5 lg:gap-3">
+            <p className="weeks">{numWeeks} Weeks</p>
+            <p className="level">{level}</p>
+          </div>
           <h5 className="mentor">By {mentor}</h5>
         </div>
       </div>
@@ -29,11 +30,13 @@ function Card({
           appealing and user-friendly websites.
         </p>
       </div>
-      <Button name="Enroll Now" style="bg-blue-600 text-white w-full p-2 mt-3" />
+      <Button
+        name="Enroll Now"
+        style="bg-blue-600 text-white w-full p-2 mt-3"
+      />
     </CourseCard>
   );
 }
-
 
 Card.propTypes = {
   imgCourse: PropTypes.string.isRequired,

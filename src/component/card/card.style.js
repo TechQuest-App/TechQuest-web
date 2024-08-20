@@ -1,26 +1,32 @@
 import styled from "styled-components";
 
 export const CourseCard = styled.div`
-  padding: 32px;
-  margin:14px;
-  width: 29%;
+  padding: 20px;
   border-radius: 12px;
   background-color: #fff;
 
+  @media (max-width: 1024px) {
+    padding: 15px;
+  }
 
   .dataCourse {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     margin: 30px 0 20px 0;
 
     p {
-      margin-right: 22px;
+      @media (max-width: 1280px) {
+        font-size: 14px;
+      }
     }
     h5 {
       font-size: 20px;
       font-weight: 500;
-      margin: auto 0 auto auto;
+
+      @media (max-width: 1280px) {
+        font-size: 16px;
+      }
     }
   }
   .txt {

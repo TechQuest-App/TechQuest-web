@@ -1,4 +1,3 @@
-import { CoursesCards } from "./courses.style";
 import { imgCourse } from "/src/assets/index.js";
 import Card from "../../../component/card/Card";
 import Title from "../../../component/title/Title";
@@ -11,7 +10,7 @@ function Courses() {
         dsc="Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in."
         btnName="View All"
       />
-      <CoursesCards>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         {/* {courses.map((course, index) => (
                 <Card
                 key={index}
@@ -71,8 +70,7 @@ function Courses() {
           titleCourse="Web Development"
           technologies="HTML, CSS, JavaScript"
         />
-
-      </CoursesCards>
+      </div>
     </>
   );
 }

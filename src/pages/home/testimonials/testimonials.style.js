@@ -1,50 +1,27 @@
-export const TestimonialsWrapper = {
-  container: {
-    width: "100%",
-    padding: "0 5%",
-    margin: "100px 0",
-  },
-  grid: {
-    display: "grid",
-    gridTemplateColumns: "repeat(2, 1fr)",
-    gap: "20px",
-    marginTop: "30px",
-  },
-  testimonial: {
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "space-between",
-    padding: "20px",
-    borderRadius: "10px",
-    backgroundColor: "#fff",
-  },
-  quote: {
-    fontSize: "14px",
-    marginBottom: "10px",
-  },
-  imgRow: {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "space-between",
-    marginTop: "10px",
-  },
-  image: {
-    width: "50px",
-    height: "50px",
-    borderRadius: "50%",
-  },
-  name: {
-    fontSize: "16px",
-    fontWeight: "bold",
-    position: "relative",
-    left: "-14%",
-  },
-  button: {
-    backgroundColor: "#007bff",
-    color: "white",
-    border: "none",
-    padding: "2% 4%",
-    borderRadius: "5px",
-    cursor: "pointer",
-  },
-};
+import styled from "styled-components";
+
+export const TestimonialsWrap = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ffffff;
+
+  .quote {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .imgRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+`;

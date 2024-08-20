@@ -1,16 +1,22 @@
 import PropTypes from "prop-types";
-import { TestimonialsWrapper } from "./testimonials.style";
+import { TestimonialsWrap } from "./testimonials.style";
+import Button from "../../../component/button/Button";
 
 function Testimonial({ name, quote, imgSrc }) {
   return (
-    <div style={TestimonialsWrapper.testimonial}>
-      <p style={TestimonialsWrapper.quote}>{quote}</p>
-      <div style={TestimonialsWrapper.imgRow}>
-        <img src={imgSrc} alt={name} style={TestimonialsWrapper.image} />
-        <h3 style={TestimonialsWrapper.name}>{name}</h3>
-        <button style={TestimonialsWrapper.button}>Read Full Story</button>
+    <TestimonialsWrap>
+      <p className="quote">{quote}</p>
+      <div className="imgRow">
+        <div className="flex items-center gap-2 mt-[10px]">
+          <img src={imgSrc} alt={name} className="image" />
+          <h3 className="name">{name}</h3>
+        </div>
+        <Button
+          name="Read Full Story"
+          style="py-2 px-3 lg:py-3 md:px-5 text-white font-bold bg-[#0F54FF]"
+        />
       </div>
-    </div>
+    </TestimonialsWrap>
   );
 }
 
