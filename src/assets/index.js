@@ -30,6 +30,11 @@ import xIcon from "./xx.png";
 import rightArrow from "./rightArrow.png";
 import plus from "./plus.png";
 
+// -----------  course page  ---------------
+import imgWeb_1 from "./imgWeb_1.png";
+import imgWeb_2 from "./imgWeb_2.png";
+import imgWeb_3 from "./imgWeb_3.png";
+
 export {
   TechQuestLogo,
   mail,
@@ -54,4 +59,7 @@ export {
   plus,
   lamp,
   eye,
+  imgWeb_1,
+  imgWeb_2,
+  imgWeb_3,
 };
