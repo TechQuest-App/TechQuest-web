@@ -36,6 +36,17 @@ import imgWeb_1 from "./imgWeb_1.png";
 import imgWeb_2 from "./imgWeb_2.png";
 import imgWeb_3 from "./imgWeb_3.png";
 
+// -----------  about-us page  ---------------
+import tag from "./about-us/tag.png";
+import award from "./about-us/award.png";
+import feedback from "./about-us/feedback.png";
+import industry from "./about-us/industry.png";
+// ---
+import provide from "./about-us/provide.png";
+import foster from "./about-us/foster.png";
+import promote from "./about-us/promote.png";
+import stayAhead from "./about-us/stayAhead.png";
+
 export {
   TechQuestLogo,
   mail,
@@ -64,4 +75,12 @@ export {
   imgWeb_1,
   imgWeb_2,
   imgWeb_3,
+  tag,
+  award,
+  feedback,
+  industry,
+  provide,
+  foster,
+  promote,
+  stayAhead,
 };
