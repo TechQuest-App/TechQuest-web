@@ -4,23 +4,71 @@ export const CourseWrapper = styled.div`
   width: 100%;
   margin: 50px auto;
   padding: 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   background-color: #fff;
 
-  .imgsContainer {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
+  .container{
+    
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .imgsContainer {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+  
 
+    }
+  } 
+`;
+
+  export const ImgContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    position: relative;
+  
     img {
       width: 32%;
-      height: 200px;
+      height: 32%;
       object-fit: cover;
       border-radius: 10px;
     }
-  }
-`;
+  `;
+  
+
+  
+  export const InfoCousre = styled.div`
+    display: flex;
+    align-items: center;
+    margin: 30px 0 50px 0;
+
+    .weeks {
+      font-size: 16px;
+      margin-right: 20px;
+      padding: 10px 16px;
+      border: 1px solid #f1f1f3 ;
+      border-radius: 1px;
+    }
+    
+    .level {
+      font-size: 16px;
+      padding: 10px 16px;
+      border: 1px solid #f1f1f3 ;
+      border-radius: 1px;
+    }
+
+    .mentor {
+      font-size: 20px;
+      position: absolute;
+      right: 14%;
+    }
+  `;
+
 
 export const HeaderCourse = styled.div`
   display: flex;
@@ -33,14 +81,15 @@ export const HeaderCourse = styled.div`
   }
 
   .title {
+    font-weight: 600;
     font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-
-  .desc {
-    font-size: 16px;
     line-height: 1.5;
+  }
+  .description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 10px 0 62px 0;
   }
 
   .btn {
@@ -58,75 +107,31 @@ export const HeaderCourse = styled.div`
   }
 `;
 
-export const InfoCousre = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 20px;
 
-  .details {
-    display: flex;
-    align-items: center;
-  }
+// export const CurriculumWrapper = styled.div`
+//   margin-top: 20px;
 
-  .weeks {
-    font-size: 16px;
-    margin-right: 20px;
-  }
+//   .CurriculumTitle {
+//     font-size: 20px;
+//     font-weight: bold;
+//     margin-bottom: 10px;
+//   }
 
-  .level {
-    font-size: 16px;
-  }
+//   .ItemsContainer {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     padding: 10px 0;
+//     border-bottom: 1px solid #eee;
+//   }
 
-  .mentor {
-    font-size: 16px;
-  }
-`;
+//   .number {
+//     font-size: 24px;
+//     font-weight: bold;
+//   }
 
-export const CurriculumWrapper = styled.div`
-  margin-top: 20px;
+//   .title {
+//     font-size: 16px;
+//   }
+// `;
 
-  .CurriculumTitle {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-
-  .ItemsContainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
-    border-bottom: 1px solid #eee;
-  }
-
-  .number {
-    font-size: 24px;
-    font-weight: bold;
-  }
-
-  .title {
-    font-size: 16px;
-  }
-`;
-
-
-// export const CourseWrapper = {
-
-// };
-// export const HeaderCourse = {
-//     txt: {},
-//     title: {},
-//     desc: {},
-//     btn: {},
-// };
-// export const imgsContainer = {};
-// export const InfoCousre = {}
-// export const Curriculum = {
-//     CurriculumTitle: {},
-//     ItemsContainer: {},
-//     number: {},
-//     title: {},
-//     weeks: {},
-//     level: {},
-// };
