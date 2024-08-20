@@ -6,6 +6,7 @@ import facebook from "./facebook.png";
 import twitter from "./twitter.png";
 import linkedin from "./linkedin.png";
 import github from "./github.png";
+import email from "./material-symbols_mail-outline.png";
 
 // -------- sign up -------------
 import calender from "./calendar.png";
@@ -54,4 +55,5 @@ export {
   plus,
   lamp,
   eye,
+  email,
 };

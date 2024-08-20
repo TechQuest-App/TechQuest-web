@@ -10,10 +10,10 @@ import Footer from "./component/footer/Footer";
 import SignUp from "./component/forms/SignUp";
 import Login from "./component/forms/Login";
 
-//-------------------  register  -----------------------
+//-------------------  pages  -----------------------
 import Home from "./pages/home/Home";
 import MyCourses from "./pages/MyCourses/MyCourses";
-
+import Contact from "./pages/contact/Contact";
 
 // // Lazy-loaded components
 // const Home = lazy(() => import('./Home'));
@@ -22,13 +22,10 @@ import MyCourses from "./pages/MyCourses/MyCourses";
 // const MyCourses = lazy(() => import('./MyCourses'));
 // const NotFound = lazy(() => import('./NotFound'));
 
-
 // // A higher-order component for protected routes
 // const ProtectedRoute = ({ element, isAuthenticated }) => {
 //   return isAuthenticated ? element : <Navigate to="/login" />;
 // };
-
-
 
 function App() {
   return (
@@ -41,6 +38,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/" element={<Home />} />
           <Route path="/courses" element={<MyCourses />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
       <Footer />
