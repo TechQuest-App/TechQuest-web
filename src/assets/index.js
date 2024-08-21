@@ -7,6 +7,7 @@ import twitter from "./twitter.png";
 import linkedin from "./linkedin.png";
 import github from "./github.png";
 import email from "./material-symbols_mail-outline.png";
+import electric from "../assets/Vector 449 (Stroke).png";
 
 // -------- sign up -------------
 import calender from "./calendar.png";
@@ -83,4 +84,5 @@ export {
   foster,
   promote,
   stayAhead,
+  electric,
 };

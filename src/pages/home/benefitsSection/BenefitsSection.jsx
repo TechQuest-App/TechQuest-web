@@ -57,7 +57,7 @@ const BenefitsSection = () => {
             className="flex flex-col gap-[30px] justify-between bg-white rounded-xl p-[30px]"
           >
             <div className="ml-auto">
-              <span className="text-[80px] leading-[80px] font-bold">
+              <span className="text-[50px] md:text-[60px] lg:text-[70px] xl:text-[80px] leading-[80px] font-bold">
                 {benefit.id}
               </span>
             </div>

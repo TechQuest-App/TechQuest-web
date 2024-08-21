@@ -1,7 +1,7 @@
 import Button from "../../../component/button/Button";
 import OnePlan from "./OnePlan/";
 
-function Pricing() {
+function OurPricing() {
   return (
     <>
       <div className="my-10">
@@ -31,4 +31,4 @@ function Pricing() {
   );
 }
 
-export default Pricing;
+export default OurPricing;

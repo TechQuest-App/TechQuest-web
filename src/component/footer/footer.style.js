@@ -18,9 +18,14 @@ export const FooterWrap = styled.footer`
       margin-bottom: 12px;
 
       img {
-        width: 48px;
-        height: 48px;
+        width: 58px;
+        height: 58px;
         object-fit: cover;
+
+        @media (max-width: 991px) {
+          width: 48px;
+          height: 48px;
+        }
       }
     }
 
