@@ -4,11 +4,11 @@ import OnePlan from "../home/pricing/OnePlan";
 const Pricing = () => {
   return (
     <div className="my-[50px] md:my-[100px]">
-      <div className="my-[10px] md:my-[60px] pb-10 border-b-[1px] border-[#E4E4E7] flex flex-col lg:flex-row items-center justify-center lg:justify-between">
-        <h2 className="text-[28px] md:text-[38px] xl:text-[48px] mb-1 font-semibold">
+      <div className="my-[10px] md:my-[60px] pb-10 border-b-[1px] border-[#E4E4E7] flex flex-col lg:flex-row gap-3 justify-center xl:justify-between">
+        <h2 className="text-[28px] md:text-[38px] xl:text-[48px] mb-1 font-semibold text-center xl:text-left">
           Our Pricings
         </h2>
-        <p className="text-[16px] md:text-[18px] font-medium max-w-[800px]">
+        <p className="text-[16px] md:text-[18px] font-medium max-w-[700px] text-center lg:text-left">
           Welcome to TechQuest's Pricing Plan page, where we offer two
           comprehensive options to cater to your needs: Free and Pro. We believe
           in providing flexible and affordable pricing options for our services.
@@ -18,7 +18,7 @@ const Pricing = () => {
           that best fits your requirements.
         </p>
       </div>
-      <div className="bg-white p-3 rounded-xl flex items-center w-fit mx-auto gap-4">
+      <div className="bg-white p-3 mt-10 md:mt-0 rounded-xl flex items-center w-fit mx-auto gap-4">
         <Button
           name={"Monthly"}
           style={"py-3 px-5 text-white bg-[#0F54FF] font-medium"}

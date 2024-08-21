@@ -15,7 +15,7 @@ import Home from "./pages/home/Home";
 import MyCourses from "./pages/MyCourses/MyCourses";
 import Contact from "./pages/contact/Contact";
 import AboutUs from "./pages/aboutUs/AboutUs";
-import Pricing from "./pages/home/pricing/Pricing";
+import Pricing from "./pages/pricing/Pricing";
 
 // // Lazy-loaded components
 // const Home = lazy(() => import('./Home'));
