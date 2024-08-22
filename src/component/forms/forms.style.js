@@ -246,6 +246,8 @@ export const SignupWrap = styled.div`
           padding: 12px;
           border-radius: 10px;
           outline: none;
+          border: 1px solid #f1f1f3;
+          background-color: #fcfcfd;
 
           @media (min-width: 1280px) {
             padding: 24px;

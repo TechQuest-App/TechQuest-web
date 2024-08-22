@@ -13,7 +13,7 @@ function Testimonial({ name, quote, imgSrc }) {
         </div>
         <Button
           name="Read Full Story"
-          style="py-2 px-3 lg:py-3 md:px-5 text-white font-bold bg-[#0F54FF]"
+          style="py-2 px-3 md:px-5 text-white bg-[#0F54FF]"
         />
       </div>
     </TestimonialsWrap>

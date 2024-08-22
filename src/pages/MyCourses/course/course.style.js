@@ -7,8 +7,7 @@ export const CourseWrapper = styled.div`
   border-radius: 10px;
   background-color: #fff;
 
-  .container{
-    
+  .container {
     .title {
       font-size: 24px;
       font-weight: bold;
@@ -18,66 +17,63 @@ export const CourseWrapper = styled.div`
       display: flex;
       justify-content: space-between;
       margin-top: 20px;
-  
-
     }
-  } 
+  }
 `;
 
-  export const ImgContainer = styled.div`
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+export const ImgContainer = styled.div`
+  img {
     width: 100%;
-    position: relative;
-  
-    img {
-      width: 32%;
-      height: 32%;
-      object-fit: cover;
-      border-radius: 10px;
-    }
-  `;
-  
+    height: 100%;
+    border-radius: 10px;
+  }
+`;
 
-  
-  export const InfoCousre = styled.div`
-    display: flex;
-    align-items: center;
-    margin: 30px 0 50px 0;
+export const InfoCousre = styled.div`
+  display: flex;
+  align-items: center;
+  margin: 30px 0 50px 0;
 
-    .weeks {
-      font-size: 16px;
-      margin-right: 20px;
-      padding: 10px 16px;
-      border: 1px solid #f1f1f3 ;
-      border-radius: 1px;
-    }
-    
-    .level {
-      font-size: 16px;
-      padding: 10px 16px;
-      border: 1px solid #f1f1f3 ;
-      border-radius: 1px;
-    }
+  .weeks {
+    font-size: 16px;
+    margin-right: 20px;
+    padding: 10px 16px;
+    border: 1px solid #f1f1f3;
+    border-radius: 1px;
+  }
 
-    .mentor {
-      font-size: 20px;
-      position: absolute;
-      right: 14%;
-    }
-  `;
+  .level {
+    font-size: 16px;
+    padding: 10px 16px;
+    border: 1px solid #f1f1f3;
+    border-radius: 1px;
+  }
 
+  .mentor {
+    font-size: 20px;
+    position: absolute;
+    right: 14%;
+  }
+`;
 
 export const HeaderCourse = styled.div`
+  margin-bottom: 50px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
   .txt {
     display: flex;
     flex-direction: column;
+    margin-bottom: 30px;
+    @media (min-width: 1024px) {
+      margin-bottom: 0px;
+    }
   }
 
   .title {
@@ -89,24 +85,18 @@ export const HeaderCourse = styled.div`
     font-weight: 400;
     font-size: 18px;
     line-height: 1.5;
-    margin: 10px 0 62px 0;
   }
 
   .btn {
-    background-color: #007bff;
-    color: #fff;
+    background-color: white;
     padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
+    border: 1px solid #f1f1f3;
+    border-radius: 8px;
+    width: 145px;
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
-
-  .btn:hover {
-    background-color: #0056b3;
-  }
 `;
-
 
 // export const CurriculumWrapper = styled.div`
 //   margin-top: 20px;
@@ -134,4 +124,3 @@ export const HeaderCourse = styled.div`
 //     font-size: 16px;
 //   }
 // `;
-

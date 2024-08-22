@@ -42,13 +42,13 @@ export const TitleAchievOrGoal = styled.div`
   flex-direction: column;
   h2.h2 {
     font-weight: 500;
-    font-size: 28px;
+    font-size: 22px;
     margin-bottom: 4px;
     @media (min-width: 768px) {
-      font-size: 38px;
+      font-size: 25px;
     }
     @media (min-width: 1280px) {
-      font-size: 48px;
+      font-size: 38px;
     }
   }
   p.p {

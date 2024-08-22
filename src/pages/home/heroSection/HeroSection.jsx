@@ -5,7 +5,7 @@ const HeroSection = () => {
   return (
     <div className="my-16 flex flex-col justify-center items-center">
       <div className="text-center">
-        <div className="flex items-center mx-auto relative gap-2 w-fit bg-white rounded-xl p-2 md:p-4 drop-shadow">
+        <div className="flex items-center mx-auto relative gap-2 w-fit bg-white rounded-xl p-3 md:p-4 drop-shadow">
           <div className=" absolute -left-[20px] -top-[25px] md:-left-[21px] md:-top-[28px] rotate-45 flex flex-col items-end gap-4">
             <span className="w-3 h-[2px] bg-black block rotate-45"></span>
             <span className="w-6 h-[2px] bg-black block"></span>

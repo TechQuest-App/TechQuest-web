@@ -26,31 +26,31 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
-          <div className="p-4 bg-white text-center rounded-md">
-            <h4 className="text-[18px] md:text-[20px] lg:text-[24px] mb-6 font-medium">
+        <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-4">
+          <div className="p-4 bg-white flex flex-col items-center justify-center text-center rounded-md h-[275px]">
+            <h4 className="text-[22px] lg:text-[20px] xl:text-[24px] mb-6 font-medium">
               Customer Support
             </h4>
-            <p className="">
+            <p className="lg:text-[13px] xl:text-[16px]">
               Our support team is available around the clock to address any
               concerns or queries you may have
             </p>
           </div>
-          <div className="p-4 bg-white text-center rounded-md">
-            <h4 className="text-[18px] md:text-[20px] lg:text-[24px] mb-6 font-medium">
+          <div className="p-4 bg-white flex flex-col items-center justify-center text-center rounded-md h-[275px]">
+            <h4 className="text-[22px] lg:text-[20px] xl:text-[24px] mb-6 font-medium">
               Feedback
             </h4>
-            <p className="">
+            <p className="lg:text-[13px] xl:text-[16px]">
               We value your feedback and are continuously worknig to improve
               TechQuest. Your input is crucial in shaping the future of
               TuchQuest
             </p>
           </div>
-          <div className="p-4 bg-white text-center rounded-md">
-            <h4 className="text-[18px] md:text-[20px] lg:text-[24px] mb-6 font-medium">
+          <div className="p-4 bg-white flex flex-col items-center justify-center text-center rounded-md h-[275px]">
+            <h4 className="text-[22px] lg:text-[20px] xl:text-[24px] mb-6 font-medium">
               Media Inquiries
             </h4>
-            <p className="">
+            <p className="lg:text-[13px] xl:text-[16px]">
               For media- related questions or press inquiries, please contact us
               at media@TechquestApp.com
             </p>
@@ -68,7 +68,7 @@ const Contact = () => {
           </p>
         </div>
         <form>
-          <div className="flex items-center gap-2 md:gap-5 mb-6">
+          <div className="flex flex-col md:flex-row items-center md:gap-2 gap-5 mb-6">
             <input
               type="text"
               placeholder="First name"

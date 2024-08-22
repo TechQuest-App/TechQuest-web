@@ -32,7 +32,7 @@ import xIcon from "./xx.png";
 import rightArrow from "./rightArrow.png";
 import plus from "./plus.png";
 
-// -----------  course page  ---------------
+// -----------  courses page  ---------------
 import imgWeb_1 from "./imgWeb_1.png";
 import imgWeb_2 from "./imgWeb_2.png";
 import imgWeb_3 from "./imgWeb_3.png";
@@ -47,6 +47,10 @@ import provide from "./about-us/provide.png";
 import foster from "./about-us/foster.png";
 import promote from "./about-us/promote.png";
 import stayAhead from "./about-us/stayAhead.png";
+
+// -----------  course page  ---------------
+import UiImage from "./UiImage.png";
+import clock from "./Icon.png";
 
 export {
   TechQuestLogo,
@@ -85,4 +89,6 @@ export {
   promote,
   stayAhead,
   electric,
+  UiImage,
+  clock,
 };
