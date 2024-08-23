@@ -40,7 +40,6 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Check for errors before submitting
     if (!values.email || !values.password) {
       setApiError("Please fill in all fields.");
       return;
@@ -62,11 +61,16 @@ const Login = () => {
         }
       );
 
-      localStorage.setItem("authToken", response.data.data.token); // Save the token to localStorage
-      login(); // Update authentication state
-      toast.success("Successful Login");
-      setApiError("");
-      navigate("/"); // Redirect to home or any other protected route
+      const token = response.data.data?.Token;
+      if (token) {
+        localStorage.setItem("authToken", token);
+        login(); // Update authentication state
+        toast.success("Successful Login");
+        setApiError("");
+        navigate("/");
+      } else {
+        throw new Error("Token not found in the response");
+      }
     } catch (error) {
       setApiSuccess("");
       if (error.response) {

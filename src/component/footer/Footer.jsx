@@ -54,22 +54,22 @@ function Footer() {
             Social Profiles
           </h6>
           <div className="iconsSocial flex items-center gap-2">
-            <div className="platform w-10 h-10 rounded bg-gray-300 flex justify-center items-center">
+            <div className="platform w-[50px] h-[50px] rounded bg-[#F7F7F8] flex justify-center items-center">
               <Link to="/facebook">
                 <img src={facebook} alt="Facebook" />
               </Link>
             </div>
-            <div className="platform w-10 h-10 rounded bg-gray-300 flex justify-center items-center">
+            <div className="platform w-[50px] h-[50px] rounded bg-[#F7F7F8] flex justify-center items-center">
               <Link to="/twitter">
                 <img src={twitter} alt="Twitter" />
               </Link>
             </div>
-            <div className="platform w-10 h-10 rounded bg-gray-300 flex justify-center items-center">
+            <div className="platform w-[50px] h-[50px] rounded bg-[#F7F7F8] flex justify-center items-center">
               <Link to="/linkedin">
                 <img src={linkedin} alt="LinkedIn" />
               </Link>
             </div>
-            <div className="platform w-10 h-10 rounded bg-gray-300 flex justify-center items-center">
+            <div className="platform w-[50px] h-[50px] rounded bg-[#F7F7F8] flex justify-center items-center">
               <Link to="/github">
                 <img src={github} alt="GitHub" />
               </Link>

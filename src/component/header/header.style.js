@@ -37,9 +37,31 @@ export const HeaderWrap = styled.div`
           border-radius: 10px;
           transition: all.3s;
 
+          &:hover {
+            background-color: #e6e6e9;
+          }
+
           &.active {
             background-color: #f1f1f3;
           }
+        }
+      }
+    }
+
+    .sideMenu {
+      .links li {
+        border-radius: 10px;
+        width: 240px;
+        text-align: center;
+        padding: 12px;
+        transition: all.3s;
+
+        &:hover {
+          background-color: #e6e6e9;
+        }
+
+        &.active {
+          background-color: #f1f1f3;
         }
       }
     }
