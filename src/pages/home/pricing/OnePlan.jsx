@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 import { OnePlanWrapper } from "./pricing.style";
 import Button from "../../../component/button/Button";
 
@@ -23,7 +22,7 @@ function OnePlan({ StatusPlan, price }) {
     <OnePlanWrapper>
       <h5 className="StatusPlan">{StatusPlan}</h5>
       <h1 className="price">
-        $ {price} <sub>/month</sub>
+        ${price} <sub>/month</sub>
       </h1>
       <div className="avaibleStatus">
         <h4 className="avaibleFeature">Available Features</h4>
@@ -45,10 +44,5 @@ function OnePlan({ StatusPlan, price }) {
     </OnePlanWrapper>
   );
 }
-
-OnePlan.propTypes = {
-  StatusPlan: PropTypes.string.isRequired,
-  price: PropTypes.number.isRequired,
-};
 
 export default OnePlan;

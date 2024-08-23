@@ -17,6 +17,8 @@ import Contact from "./pages/contact/Contact";
 import AboutUs from "./pages/aboutUs/AboutUs";
 import Pricing from "./pages/pricing/Pricing";
 import CoursePage from "./pages/coursePage/CoursePage";
+import { AuthProvider } from "./context/AuthContext";
+import Notification from "./component/notification/Notification";
 
 // // Lazy-loaded components
 // const Home = lazy(() => import('./Home'));
@@ -32,7 +34,7 @@ import CoursePage from "./pages/coursePage/CoursePage";
 
 function App() {
   return (
-    <div>
+    <AuthProvider>
       <TopHeader />
       <div className="container mx-auto px-4">
         <Header />
@@ -48,7 +50,8 @@ function App() {
         </Routes>
       </div>
       <Footer />
-    </div>
+      <Notification />
+    </AuthProvider>
   );
 }
 

@@ -8,6 +8,7 @@ import linkedin from "./linkedin.png";
 import github from "./github.png";
 import email from "./material-symbols_mail-outline.png";
 import electric from "../assets/Vector 449 (Stroke).png";
+import arrow from "./arrow.png";
 
 // -------- sign up -------------
 import calender from "./calendar.png";
@@ -91,4 +92,5 @@ export {
   electric,
   UiImage,
   clock,
+  arrow,
 };

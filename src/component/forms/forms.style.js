@@ -228,7 +228,6 @@ export const SignupWrap = styled.div`
       width: 100%;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
       align-items: flex-start;
 
       .oneInput {
@@ -285,15 +284,12 @@ export const LoginLeftWrap = styled.div`
     position: relative;
     padding: 20px;
     height: 717px;
-    /* background-image: url(${loginImg});
-    background-size: cover;
-    background-position: center; */
 
     @media (max-width: 1024px) {
-      height: 500px;
+      height: 600px;
     }
-    @media (max-width: 480px) {
-      height: 300px;
+    @media (max-width: 640px) {
+      height: 360px;
     }
     &::before {
       content: "";
@@ -312,20 +308,20 @@ export const LoginLeftWrap = styled.div`
         border: none;
       }
     }
+  }
 
-    .loginImg {
-      position: absolute;
-      right: -50px;
-      bottom: 15px;
-      height: calc(100% + 30px);
-      width: 100%;
+  .loginImg {
+    position: absolute;
+    right: -50px;
+    bottom: 15px;
+    height: calc(100% + 30px);
+    width: 100%;
 
-      @media (max-width: 1024px) {
-        right: 0px;
-      }
-      @media (max-width: 991px) {
-        bottom: 0px;
-      }
+    @media (max-width: 1024px) {
+      right: 0px;
+    }
+    @media (max-width: 991px) {
+      bottom: 0px;
     }
   }
 
@@ -348,12 +344,16 @@ export const LoginLeftWrap = styled.div`
     }
   }
 
-  .circle {
+  .circle,
+  .btmCircle {
     width: 30px;
     height: 30px;
     border-radius: 50%;
     background-color: #0f54ff;
     position: absolute;
+  }
+
+  .circle {
     top: -35px;
     left: 15px;
 
@@ -366,6 +366,22 @@ export const LoginLeftWrap = styled.div`
       height: 25px;
       top: -5px;
       left: 0px;
+    }
+  }
+
+  .btmCircle {
+    bottom: 0px;
+    right: -22px;
+
+    /* @media (max-width: 991px) {
+      bottom: -8px;
+      right: -8px;
+    } */
+    @media (max-width: 767px) {
+      width: 25px;
+      height: 25px;
+      bottom: 0px;
+      right: -4px;
     }
   }
 `;
