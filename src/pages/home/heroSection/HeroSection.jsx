@@ -1,4 +1,4 @@
-import { electric } from "../../../assets";
+import { electric, home1 } from "../../../assets";
 import Button from "../../../component/button/Button";
 
 const HeroSection = () => {
@@ -42,11 +42,7 @@ const HeroSection = () => {
         </div>
       </div>
       <div className="my-20 w-full">
-        <iframe
-          className=" relative left-0 top-0 w-full h-[400px] md:h-[590px] lg:h-[790px]"
-          src="https://www.youtube.com/embed/xcJtL7QggTI?si=z-lWVfnCyQ5xE2EZ"
-          title="YouTube video player"
-        ></iframe>
+        <img src={home1} alt="" className="w-full h-full rounded-xl" />
       </div>
     </div>
   );

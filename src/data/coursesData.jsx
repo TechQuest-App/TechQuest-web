@@ -1,8 +1,26 @@
+import {
+  imgWeb_1,
+  imgWeb_2,
+  imgWeb_3,
+  imgFront_1,
+  imgFront_2,
+  imgFront_3,
+  imgG_1,
+  imgG_2,
+  imgG_3,
+  imgMob_1,
+  imgMob_2,
+  imgMob_3,
+  imgUi_1,
+  imgUi_2,
+  imgUi_3,
+} from "../assets";
+
 export const coursesData = [
   {
     id: 1,
     category: "web",
-    image: "https://via.placeholder.com/150",
+    images: [imgUi_1, imgUi_2, imgUi_3],
     title: "Web Development Fundamentals",
     mentor: "John Doe",
     description:
@@ -20,7 +38,7 @@ export const coursesData = [
   {
     id: 2,
     category: "UI",
-    image: "https://via.placeholder.com/150",
+    images: [imgFront_1, imgFront_2, imgFront_3],
     title: "UI/UX Design for Beginners",
     mentor: "Jane Doe",
     description:
@@ -38,7 +56,7 @@ export const coursesData = [
   {
     id: 3,
     category: "front-end",
-    image: "https://via.placeholder.com/150",
+    images: [imgG_1, imgG_2, imgG_3],
     title: "Advanced Front-End Development",
     mentor: "Bob Smith",
     description:
@@ -56,7 +74,7 @@ export const coursesData = [
   {
     id: 4,
     category: "graphic-design",
-    image: "https://via.placeholder.com/150",
+    images: [imgMob_1, imgMob_2, imgMob_3],
     title: "Graphic Design for Print and Digital",
     mentor: "Alice Jones",
     description:
@@ -74,7 +92,7 @@ export const coursesData = [
   {
     id: 5,
     category: "HTML",
-    image: "https://via.placeholder.com/150",
+    images: [imgWeb_1, imgWeb_2, imgWeb_3],
     title: "HTML5 and CSS3 Mastery",
     mentor: "David Lee",
     description:

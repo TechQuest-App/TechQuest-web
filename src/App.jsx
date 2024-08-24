@@ -15,24 +15,33 @@ import Home from "./pages/home/Home";
 import MyCourses from "./pages/MyCourses/MyCourses";
 import Contact from "./pages/contact/Contact";
 import AboutUs from "./pages/aboutUs/AboutUs";
-import Pricing from "./pages/pricing/Pricing";
 import CoursePage from "./pages/coursePage/CoursePage";
 import { AuthProvider } from "./context/AuthContext";
 import Notification from "./component/notification/Notification";
-
-// // Lazy-loaded components
-// const Home = lazy(() => import('./Home'));
-// const SignUp = lazy(() => import('./SignUp'));
-// const Login = lazy(() => import('./Login'));
-// const MyCourses = lazy(() => import('./MyCourses'));
-// const NotFound = lazy(() => import('./NotFound'));
-
-// // A higher-order component for protected routes
-// const ProtectedRoute = ({ element, isAuthenticated }) => {
-//   return isAuthenticated ? element : <Navigate to="/login" />;
-// };
+import { useState, useEffect } from "react";
+import { FaArrowUp } from "react-icons/fa";
 
 function App() {
+  const [showScroll, setShowScroll] = useState(false);
+
+  const checkScrollTop = () => {
+    if (!showScroll && window.pageYOffset > 300) {
+      setShowScroll(true);
+    } else if (showScroll && window.pageYOffset <= 300) {
+      setShowScroll(false);
+    }
+  };
+
+  const scrollTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", checkScrollTop);
+    return () => {
+      window.removeEventListener("scroll", checkScrollTop);
+    };
+  }, [showScroll]);
   return (
     <AuthProvider>
       <TopHeader />
@@ -45,12 +54,34 @@ function App() {
           <Route path="/courses" element={<MyCourses />} />
           <Route path="/coursepage" element={<CoursePage />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/pricing" element={<Pricing />} />
           <Route path="/aboutUs" element={<AboutUs />} />
         </Routes>
       </div>
       <Footer />
       <Notification />
+
+      {/* Scroll to Top Button */}
+      <div
+        className="scrollTop"
+        onClick={scrollTop}
+        style={{
+          position: "fixed",
+          right: "30px",
+          bottom: "30px",
+          height: "40px",
+          width: "40px",
+          backgroundColor: "#0F54FF",
+          color: "white",
+          textAlign: "center",
+          borderRadius: "50%",
+          cursor: "pointer",
+          display: showScroll ? "flex" : "none",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <FaArrowUp />
+      </div>
     </AuthProvider>
   );
 }

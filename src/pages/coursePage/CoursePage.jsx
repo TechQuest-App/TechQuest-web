@@ -129,7 +129,7 @@ const CoursePage = () => {
         <img
           src={UiImage}
           alt=""
-          className="w-full h-[400px] md:h-[590px] lg:h-[790px] mb-10"
+          className="w-full h-[400px] md:h-[550px] lg:h-[700px] mb-10"
         />
       </div>
 

@@ -9,6 +9,7 @@ import github from "./github.png";
 import email from "./material-symbols_mail-outline.png";
 import electric from "../assets/Vector 449 (Stroke).png";
 import arrow from "./arrow.png";
+import home1 from "./home.jpeg";
 
 // -------- sign up -------------
 import calender from "./calendar.png";
@@ -37,6 +38,22 @@ import plus from "./plus.png";
 import imgWeb_1 from "./imgWeb_1.png";
 import imgWeb_2 from "./imgWeb_2.png";
 import imgWeb_3 from "./imgWeb_3.png";
+
+import imgFront_1 from "./imgFront_1.png";
+import imgFront_2 from "./imgFront_2.png";
+import imgFront_3 from "./imgFront_3.png";
+
+import imgG_1 from "./imgG_1.png";
+import imgG_2 from "./imgG_2.png";
+import imgG_3 from "./imgG_3.png";
+
+import imgMob_1 from "./imgMob_1.png";
+import imgMob_2 from "./imgMob_2.png";
+import imgMob_3 from "./imgG_3.png";
+
+import imgUi_1 from "./imgUi_1.png";
+import imgUi_2 from "./imgUi_2.png";
+import imgUi_3 from "./imgUi_3.png";
 
 // -----------  about-us page  ---------------
 import tag from "./about-us/tag.png";
@@ -93,4 +110,17 @@ export {
   UiImage,
   clock,
   arrow,
+  home1,
+  imgFront_1,
+  imgFront_2,
+  imgFront_3,
+  imgG_1,
+  imgG_2,
+  imgG_3,
+  imgMob_1,
+  imgMob_2,
+  imgMob_3,
+  imgUi_1,
+  imgUi_2,
+  imgUi_3,
 };

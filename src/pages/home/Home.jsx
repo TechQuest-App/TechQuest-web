@@ -4,6 +4,7 @@ import Courses from "/src/pages/home/courses/Courses";
 import Testimonials from "./testimonials/Testimonials";
 import OurPricing from "./pricing/OurPricing";
 import Frequently from "./Frequently/Frequently";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -12,7 +13,9 @@ function Home() {
       <BenefitsSection />
       <Courses />
       <Testimonials />
-      <OurPricing />
+      <Link id="pricing">
+        <OurPricing />
+      </Link>
       <Frequently />
     </>
   );

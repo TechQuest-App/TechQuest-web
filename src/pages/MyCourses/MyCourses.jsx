@@ -71,15 +71,13 @@ function MyCourses() {
                 modules={[Navigation, Pagination]}
                 className="mySwiper"
               >
-                <SwiperSlide>
-                  <img src={imgWeb_1} alt="web development" />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src={imgWeb_2} alt="web development" />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src={imgWeb_3} alt="web development" />
-                </SwiperSlide>
+                {course.images.map((img) => (
+                  <div key={course.id}>
+                    <SwiperSlide>
+                      <img src={img} alt="web development" />
+                    </SwiperSlide>
+                  </div>
+                ))}
               </Swiper>
             </ImgContainer>
 
