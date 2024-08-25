@@ -51,9 +51,9 @@ import imgMob_1 from "./imgMob_1.png";
 import imgMob_2 from "./imgMob_2.png";
 import imgMob_3 from "./imgG_3.png";
 
-import imgUi_1 from "./imgUi_1.png";
-import imgUi_2 from "./imgUi_2.png";
-import imgUi_3 from "./imgUi_3.png";
+import imgUi_1 from "./web-dev.png";
+import imgUi_2 from "./web-dev-2.png";
+import imgUi_3 from "./web-dev-3.png";
 
 // -----------  about-us page  ---------------
 import tag from "./about-us/tag.png";
